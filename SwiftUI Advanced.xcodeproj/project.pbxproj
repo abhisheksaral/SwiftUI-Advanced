@@ -13,6 +13,8 @@
 		38D6FEB226A3C19200A525BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D6FEB126A3C19200A525BA /* Preview Assets.xcassets */; };
 		38D6FEB426A3C19200A525BA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6FEB326A3C19200A525BA /* Persistence.swift */; };
 		38D6FEB726A3C19200A525BA /* SwiftUI_Advanced.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38D6FEB526A3C19200A525BA /* SwiftUI_Advanced.xcdatamodeld */; };
+		38D6FEC126A3C2AF00A525BA /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6FEBF26A3C2AF00A525BA /* VisualEffectBlur.swift */; };
+		38D6FEC226A3C2AF00A525BA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D6FEC026A3C2AF00A525BA /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		38D6FEB326A3C19200A525BA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		38D6FEB626A3C19200A525BA /* SwiftUI_Advanced.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_Advanced.xcdatamodel; sourceTree = "<group>"; };
 		38D6FEB826A3C19200A525BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38D6FEBF26A3C2AF00A525BA /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		38D6FEC026A3C2AF00A525BA /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		38D6FEA926A3C19100A525BA /* SwiftUI Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				38D6FEBE26A3C2AF00A525BA /* Helpers */,
 				38D6FEAA26A3C19100A525BA /* SwiftUI_AdvancedApp.swift */,
 				38D6FEAC26A3C19100A525BA /* ContentView.swift */,
 				38D6FEAE26A3C19200A525BA /* Assets.xcassets */,
@@ -73,6 +78,15 @@
 				38D6FEB126A3C19200A525BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38D6FEBE26A3C2AF00A525BA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				38D6FEBF26A3C2AF00A525BA /* VisualEffectBlur.swift */,
+				38D6FEC026A3C2AF00A525BA /* ImagePicker.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D6FEC126A3C2AF00A525BA /* VisualEffectBlur.swift in Sources */,
 				38D6FEB426A3C19200A525BA /* Persistence.swift in Sources */,
 				38D6FEB726A3C19200A525BA /* SwiftUI_Advanced.xcdatamodeld in Sources */,
+				38D6FEC226A3C2AF00A525BA /* ImagePicker.swift in Sources */,
 				38D6FEAD26A3C19100A525BA /* ContentView.swift in Sources */,
 				38D6FEAB26A3C19100A525BA /* SwiftUI_AdvancedApp.swift in Sources */,
 			);
