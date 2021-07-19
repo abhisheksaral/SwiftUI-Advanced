@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var email:String = ""
+    @State private var password:String = ""
 
     var body: some View {
         ZStack {
@@ -16,15 +19,55 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea(.all)
             VStack {
-                VStack(alignment: .leading, spacing: 16) {
+                VStack(alignment: .leading, spacing: 16.0) {
                     Text("Sign Up")
                         .font(Font.largeTitle.bold())
                         .foregroundColor(.white)
                     Text("Access to 120+ hours of courses, tutorials and livestreams")
                         .font(.subheadline)
                         .foregroundColor(Color.white.opacity(0.7))
+                    
+                    
+                    
+                    HStack(spacing: 12) {
+                        Image(systemName: "envelope.open.fill")
+                            .foregroundColor(.white)
+                        TextField("Email", text: $email)
+                            .colorScheme(.dark)
+                            .foregroundColor(Color.white.opacity(0.7))
+                            .autocapitalization(.none)
+                            .textContentType(.emailAddress)
+                    }
+                    .frame(height: 52)
+                    .overlay(RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.white, lineWidth: 1)
+                                .blendMode(.overlay))
+                    .background(Color("secondaryBackgroundColor")
+                                    .cornerRadius(16)
+                                    .opacity(0.8))
+                    
+                    
+                    
+                    HStack(spacing: 12) {
+                        Image(systemName: "key.fill")
+                            .foregroundColor(.white)
+                        TextField("Password", text: $password)
+                            .colorScheme(.dark)
+                            .foregroundColor(Color.white.opacity(0.7))
+                            .autocapitalization(.none)
+                            .textContentType(.password)
+                    }
+                    .frame(height: 52)
+                    .overlay(RoundedRectangle(cornerRadius: 16)
+                                .stroke(Color.white, lineWidth: 1)
+                                .blendMode(.overlay))
+                    .background(Color("secondaryBackgroundColor")
+                                    .cornerRadius(16)
+                                    .opacity(0.8))
+                    
+                    
                 }
-                .padding(20)
+                .padding(.init(top: 20, leading: 40, bottom: 20, trailing: 40))
             }
             .background(
             RoundedRectangle(cornerRadius: 30)
